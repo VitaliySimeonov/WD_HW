@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIST_OF_COMPLETED_TASKS</title>
-</head>
-<body>
     <h1>LIST OF COMPLETED TASKS</h1>
     <ol>
         <li><a href="./Pages/1.CV_VS.html" target="_blank" title="CV Vitaliy Simeonov"> <h2> CV Vitaliy Simeonov</h2></a></li>
