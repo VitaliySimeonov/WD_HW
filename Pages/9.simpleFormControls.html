@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpleFormControls.html</title>
+</head>
+<body>
+    <fieldset style="width: 50%;" >
+    <form action="registration.py" method="post">
+    <h1>Регистрация</h1>
+    <fieldset style="width: 600px;">
+        <legend>Лични данни</legend>
+        <!-- Как се подравняват полетата в една линия -->
+        <label for="fname">Име:</label>
+        <input type="text" id="fname" placeholder="Въведете име" size="50" minlength="3" required autofocus><br><br>
+        <label for="sname">Фамилия:</label>
+        <input type="text" id="sname" placeholder="Въведете Фамилия" size="50" minlength="3" required>
+        <div>ПОЛ: 
+            <label for="Мъж">Мъж<input type="radio" name="пол" id="Мъж"></label>
+            <label for="Жена">Жена<input type="radio" name="пол" id="Жена"></label>
+        </div>
+    </fieldset>
+    <br>
+    <label for="Коментар">Коментар:</label><br>
+    <!-- Как да подравня в един размер полетата -->
+    <textarea name="Коментар" id="Коментар" cols="83" rows="7" placeholder="Напишете ни нещо"></textarea><br>
+    <button type="submit">Изпрати</button>
+    <button type="reset">Изтрий</button>
+    </form>    
+    </fieldset>
+    
+
+</body>
+</html>
