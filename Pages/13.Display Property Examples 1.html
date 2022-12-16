@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Examples 1</title>
+    <style>
+        p{
+            border: 2px solid green;
+            width: 30%;
+        }
+        /* .none>p наследниците на "p" конкретно втория*/
+        div>p:nth-of-type(1){
+            background-color: aqua;
+        }
+        /* .none>p наследниците на "p" конкретно втория*/
+        div>p:nth-of-type(2){
+            background-color: chartreuse;
+        }
+        /* .none>p наследниците на "p" конкретно третия*/
+        div>p:nth-of-type(3){
+            background-color: coral;
+        }
+        /* .none>p наследниците на "p" */
+        .none>p {
+            display: none;
+        }
+        .block>p{
+            display: block;
+        }
+        .block>p:nth-of-type(1){
+            text-align: right;
+        }
+        .block>p:nth-of-type(2){
+            text-align: center;
+        }
+        .block>p:nth-of-type(3){
+            text-align: left;
+        }
+        /* .none>p наследниците на "p" */
+        .inline>p{
+            display: inline;
+        }
+        .title>p{
+            display: inline-block;
+        }
+        .title>p:nth-of-type(1){
+            text-align: left;
+        }
+        title>p:nth-of-type(2){
+            text-align: left;
+        }
+        .title>p:nth-of-type(3){
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="none">
+        <h3>display: none;</h3>
+        <hr>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="block">
+        <h3>display: block; width: 30%</h3>
+        <hr>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="inline">
+        <h3>display: inline; width: 30%</h3>
+        <hr>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="title">
+        <h3>display: inline-block; width: 30%</h3>
+        <hr>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    
+</body>
+</html>
